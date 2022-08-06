@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Object Chapter5</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+  <script>
+    // var started = false;
+    function makeTheCar() {
+      var makes = ["Maruti", "TATA", "MAHINDRA", "HYUNDAI", "AUDI", "SKODA"];
+      var models = ["KISAZI", "SAFARI", "THAR", "i30N", "RS7", "KODIAQ"];
+      var years = [2013, 2021, 2021, 2022, 2019, 2022];
+      var colors = ["GREY", "BLUE", "RED", "rapid blue", "sporty grye", "lighting blue"];
+      var offRoad = [true, false];
+
+      var rand1 = Math.floor(Math.random() * makes.length);
+      var rand2 = Math.floor(Math.random() * models.length);
+      var rand3 = Math.floor(Math.random() * years.length);
+      var rand4 = Math.floor(Math.random() * colors.length);
+      var rand5 = Math.floor(Math.random() * 5);
+      var rand6 = Math.floor(Math.random() * 2);
+
+      // var started = false;
+      var getTheCar = {
+        make: makes[rand1],
+        model: models[rand2],
+        year: years[rand3],
+        color: colors[rand4],
+        passenger: rand5,
+        allWheel: offRoad[rand6],
+        mileage: 0,
+        started: true,
+        start: function () {
+          this.started = true;
+        },
+        stop: function () {
+          this.started = false;
+        },
+        drive: function () {
+          if (this.started) {
+            alert("Zip Zap Zoom");
+          } else {
+            alert("Start the engine");
+          }
+        }
+      };
+
+      return getTheCar;
+    }
+
+    function carDisplay(car) {
+      console.log("your new car is a " + car.year + " " + car.make + " " + car.model);
+    }
+
+    var carToSell = makeTheCar();
+    carDisplay(carToSell);
+    // carToSell.stop();
+    carToSell.drive();
+    carToSell.start();
+    carToSell.drive();
+    carToSell.stop();
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
