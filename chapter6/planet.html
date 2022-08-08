@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Planets</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+  <style>
+    .redText {
+      color: rgb(255, 30, 0);
+    }
+
+    #redPlanet {
+      color: brown;
+    }
+
+    h1.blPlanet {
+      color: aquamarine;
+    }
+
+    #bluePlanet {
+      color: blue;
+    }
+  </style>
+  <script>
+    function init() {
+      var planet = document.getElementById("greenPlanet");
+      planet.innerHTML = "Red Alert: hit by phaser fire";
+      planet.setAttribute("class", "redText");
+    }
+    window.onload = init;
+  </script>
+</head>
+
+<body>
+  <h1>Green Planet</h1>
+  <p id="greenPlanet">All is well</p>
+  <h1 class="redPlanet">Red Planet</h1>
+  <p id="redPlanet">Nothing to report</p>
+  <h1 class="blPlanet">Blue Planet</h1>
+  <p id="bluePlanet">All system Are-Ok</p>
+</body>
+
+</html>

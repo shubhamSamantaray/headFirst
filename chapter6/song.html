@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>My Playlist</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+  <script>
+    function addSongs() {
+      var song1 = document.getElementById("song1");
+      var song2 = document.getElementById("song2");
+      var song3 = document.getElementById("song3");
+
+      song1.innerHTML = "Blue Suede Strings, by elvis Pagely";
+      song2.innerHTML = "Great Objects on fire, by jerry JSon lewis";
+      song3.innerText = "I code the line, By Jonny JS";
+    }
+    window.onload = addSongs;
+  </script>
+</head>
+
+<body>
+  <H1>My awesome playslist</H1>
+  <ul id="playlist">
+    <li id="song1"></li>
+    <li id="song2"></li>
+    <li id="song3"></li>
+  </ul>
+</body>
+
+</html>
