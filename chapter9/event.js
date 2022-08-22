@@ -12,6 +12,8 @@ function init() {
 function showAnswer() {
   var image = document.getElementById("testImg");
   image.style.filter = 'blur(0px)';
+
+  setTimeout(addBlur, 2000)
 }
 
 function addBlur() {
