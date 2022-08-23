@@ -34,6 +34,7 @@
 		printProducts(products);
 
 		function compareName(colaA, colaB) {
+
 			if (colaA.name > colaB.name) {
 				return 1;
 			} else if (colaA.name === colaB.name) {
@@ -64,6 +65,7 @@
 		}
 
 		function compareSold(colaA, colaB) {
+			document.write(colaA.name, colaB.name + "<br>")
 			if (colaA.sold > colaB.sold) {
 				return 1;
 			} else if (colaA.sold === colaB.sold) {
